@@ -23,11 +23,18 @@ const postJsonLd = {
 export const metadata: Metadata = {
   title: post.title,
   description: post.description,
+  alternates: { canonical: `/blog/${post.slug}` },
   openGraph: {
     title: post.title,
     description: post.description,
+    url: `/blog/${post.slug}`,
+    siteName: "Nouriddin Ben Zekri",
     type: "article",
     publishedTime: post.date,
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [`/blog/${post.slug}/opengraph-image`],
   },
 };
 
