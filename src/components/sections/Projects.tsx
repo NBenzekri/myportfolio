@@ -60,31 +60,36 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+      <div className="mt-6 grid gap-6 sm:grid-cols-2">
         {compact.map((project) => (
-          <p key={project.id} className="text-[15px] leading-relaxed">
-            <Image
-              src={project.logo}
-              alt=""
-              width={20}
-              height={20}
-              className="mr-1.5 inline-block h-5 w-5 rounded-sm object-contain align-text-bottom"
-            />
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener"
-              className="font-semibold text-petrol transition-colors hover:text-flame"
-            >
-              {project.name}
-              <span aria-hidden className="ml-0.5 text-petrol-2">
-                ↗
-              </span>
-            </a>{" "}
-            <span className="text-muted">
+          <article
+            key={project.id}
+            className="border-t-2 border-petrol-2 bg-paper p-5 shadow-sm"
+          >
+            <h3 className="flex items-center gap-2 font-heading text-base font-bold text-ink">
+              <Image
+                src={project.logo}
+                alt=""
+                width={24}
+                height={24}
+                className="h-6 w-6 rounded-sm object-contain"
+              />
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener"
+                className="transition-colors hover:text-petrol"
+              >
+                {project.name}
+                <span aria-hidden className="ml-1 text-petrol-2">
+                  ↗
+                </span>
+              </a>
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted">
               {pick(project.description, locale)}
-            </span>
-          </p>
+            </p>
+          </article>
         ))}
       </div>
     </Section>
