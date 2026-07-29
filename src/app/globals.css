@@ -9,6 +9,7 @@
   --tone-petrol-2: #3e7a8a;
   --tone-flame: #e8590c;
   --tone-flame-deep: #c2410c;
+  --tone-kicker: #e8590c;
   --tone-line: #d9e3e6;
   --tone-muted: #5a6b71;
   --tone-mist: #f3f7f8;
@@ -26,6 +27,7 @@
   --tone-petrol-2: #7cc3d6;
   --tone-flame: #f0692e;
   --tone-flame-deep: #f5854f;
+  --tone-kicker: #f5854f;
   --tone-line: #24414c;
   --tone-muted: #93acb5;
   --tone-mist: #13242b;
@@ -38,6 +40,7 @@
   --color-petrol-2: var(--tone-petrol-2);
   --color-flame: var(--tone-flame);
   --color-flame-deep: var(--tone-flame-deep);
+  --color-kicker: var(--tone-kicker);
   --color-line: var(--tone-line);
   --color-muted: var(--tone-muted);
   --color-mist: var(--tone-mist);

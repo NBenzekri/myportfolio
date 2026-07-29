@@ -10,7 +10,7 @@ const dateFormat = new Intl.DateTimeFormat("en-GB", {
 export default function BlogIndex() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-16 sm:py-20">
-      <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-flame-deep">
+      <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-kicker">
         Notes from the field
       </p>
       <h1 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-title">

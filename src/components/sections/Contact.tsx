@@ -87,7 +87,7 @@ export default function Contact() {
               {pending ? t("sending") : t("send")}
             </button>
             {state.status === "error" ? (
-              <p className="text-sm text-flame-deep">{t("error")}</p>
+              <p className="text-sm text-kicker">{t("error")}</p>
             ) : null}
             {state.status === "unavailable" ? (
               <p className="text-sm text-muted">

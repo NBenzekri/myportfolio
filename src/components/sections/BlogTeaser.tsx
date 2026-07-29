@@ -39,7 +39,7 @@ export default function BlogTeaser() {
       <p className="mt-8">
         <NextLink
           href="/blog"
-          className="font-mono text-xs font-semibold tracking-widest text-petrol uppercase transition-colors hover:text-flame-deep"
+          className="font-mono text-xs font-semibold tracking-widest text-petrol uppercase transition-colors hover:text-kicker"
         >
           {t("all")} →
         </NextLink>

@@ -15,7 +15,7 @@ export default function Experience() {
           <article key={xp.id} className="relative">
             <span
               aria-hidden
-              className={`absolute top-1 -left-[33px] h-3 w-3 rounded-full border-2 ${
+              className={`absolute top-1 -left-[31px] h-3 w-3 rounded-full border-2 ${
                 xp.current
                   ? "border-flame bg-flame ring-4 ring-flame/15"
                   : "border-petrol-2 bg-paper"
