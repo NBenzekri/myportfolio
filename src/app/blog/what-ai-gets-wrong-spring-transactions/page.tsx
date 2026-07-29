@@ -168,7 +168,7 @@ public void register(User user) throws NotificationException {
         </p>
         <p>
           So I review generated Spring code the way I review a talented junior
-          engineer's: I assume every annotation is decorative until proven
+          engineer&apos;s: I assume every annotation is decorative until proven
           otherwise. Two habits make that cheap. Integration tests with
           Testcontainers that assert actual database state after a failure, not
           just that a method threw. And in development, transaction interceptor

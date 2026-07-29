@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { posts } from "@/data/posts";
 
 const dateFormat = new Intl.DateTimeFormat("en-GB", {
@@ -26,12 +27,12 @@ export default function BlogIndex() {
               {dateFormat.format(new Date(post.date))}
             </p>
             <h2 className="mt-1 font-heading text-xl font-bold text-ink">
-              <a
+              <Link
                 href={`/blog/${post.slug}`}
                 className="transition-colors hover:text-petrol"
               >
                 {post.title}
-              </a>
+              </Link>
             </h2>
             <p className="mt-1.5 text-[15px] leading-relaxed text-muted">
               {post.description}

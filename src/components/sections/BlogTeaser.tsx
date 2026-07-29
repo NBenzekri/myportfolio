@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import NextLink from "next/link";
 import Section from "@/components/Section";
 import { posts } from "@/data/posts";
 
@@ -22,12 +23,12 @@ export default function BlogTeaser() {
               {dateFormat.format(new Date(post.date))}
             </p>
             <h3 className="mt-1 font-heading text-lg font-bold text-ink">
-              <a
+              <NextLink
                 href={`/blog/${post.slug}`}
                 className="transition-colors hover:text-petrol"
               >
                 {post.title}
-              </a>
+              </NextLink>
             </h3>
             <p className="mt-1 max-w-xl text-[15px] leading-relaxed text-muted">
               {post.description}
@@ -36,12 +37,12 @@ export default function BlogTeaser() {
         ))}
       </ul>
       <p className="mt-8">
-        <a
+        <NextLink
           href="/blog"
           className="font-mono text-xs font-semibold tracking-widest text-petrol uppercase transition-colors hover:text-flame-deep"
         >
           {t("all")} →
-        </a>
+        </NextLink>
       </p>
     </Section>
   );

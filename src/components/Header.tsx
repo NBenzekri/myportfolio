@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import NextLink from "next/link";
 import { Link } from "@/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeToggle from "./ThemeToggle";
@@ -31,9 +32,12 @@ export default function Header() {
           >
             {t("projects")}
           </Link>
-          <a href="/blog" className="transition-colors hover:text-petrol">
+          <NextLink
+            href="/blog"
+            className="transition-colors hover:text-petrol"
+          >
             {t("blog")}
-          </a>
+          </NextLink>
           <Link
             href="/#contact"
             className="transition-colors hover:text-petrol"
