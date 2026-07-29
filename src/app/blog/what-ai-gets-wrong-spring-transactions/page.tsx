@@ -1,9 +1,25 @@
 import type { Metadata } from "next";
 import { posts } from "@/data/posts";
+import { site } from "@/data/site";
+import JsonLd from "@/components/JsonLd";
 
 const post = posts.find(
   (p) => p.slug === "what-ai-gets-wrong-spring-transactions",
 )!;
+
+const postJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.title,
+  description: post.description,
+  datePublished: post.date,
+  url: `${site.url}/blog/${post.slug}`,
+  author: {
+    "@type": "Person",
+    name: site.name,
+    url: site.url,
+  },
+};
 
 export const metadata: Metadata = {
   title: post.title,
@@ -19,6 +35,7 @@ export const metadata: Metadata = {
 export default function Post() {
   return (
     <main className="mx-auto max-w-2xl px-5 py-16">
+      <JsonLd data={postJsonLd} />
       <article className="prose-article">
         <p className="font-mono text-xs text-petrol-2">29 Jul 2026</p>
         <h1 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-petrol sm:text-4xl">

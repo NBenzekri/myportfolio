@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "Senior full stack engineer in Paris. Java, Spring Boot, Kafka and React on business-critical systems since 2018. Builder of PronoFans, Certi-DPE and other products."
+  },
   "nav": {
     "work": "Work",
     "projects": "Projects",
