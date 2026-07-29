@@ -17,7 +17,7 @@ export default function Section({
         <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-flame-deep">
           {kicker}
         </p>
-        <h2 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-petrol">
+        <h2 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-title">
           {title}
           <span className="text-flame">.</span>
         </h2>

@@ -14,7 +14,7 @@ export default function Hero() {
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-flame-deep">
             {t("kicker")}
           </p>
-          <h1 className="mt-3 font-heading text-4xl font-extrabold tracking-tight text-petrol sm:text-5xl">
+          <h1 className="mt-3 font-heading text-4xl font-extrabold tracking-tight text-title sm:text-5xl">
             {t("title")}
             <span className="text-flame">.</span>
           </h1>

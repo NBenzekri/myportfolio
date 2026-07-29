@@ -4,6 +4,7 @@
   color-scheme: light;
   --tone-paper: #ffffff;
   --tone-ink: #1b262b;
+  --tone-title: #135263;
   --tone-petrol: #135263;
   --tone-petrol-2: #3e7a8a;
   --tone-flame: #e8590c;
@@ -13,21 +14,26 @@
   --tone-mist: #f3f7f8;
 }
 
+/* Dark mode keeps the CV identity: the petrol hue moves into the
+   background family, titles turn near-white for readability, teal
+   only survives in small accents, flame stays the pop color. */
 .dark {
   color-scheme: dark;
-  --tone-paper: #0e1518;
-  --tone-ink: #e4ecef;
-  --tone-petrol: #6db2c4;
-  --tone-petrol-2: #8ec4d2;
-  --tone-flame: #f2692e;
-  --tone-flame-deep: #f0824e;
-  --tone-line: #24333a;
-  --tone-muted: #93a8b0;
-  --tone-mist: #151f24;
+  --tone-paper: #0d181d;
+  --tone-ink: #dce7ea;
+  --tone-title: #eef5f7;
+  --tone-petrol: #5fb0c7;
+  --tone-petrol-2: #7cc3d6;
+  --tone-flame: #f0692e;
+  --tone-flame-deep: #f5854f;
+  --tone-line: #24414c;
+  --tone-muted: #93acb5;
+  --tone-mist: #13242b;
 }
 
 @theme inline {
   --color-ink: var(--tone-ink);
+  --color-title: var(--tone-title);
   --color-petrol: var(--tone-petrol);
   --color-petrol-2: var(--tone-petrol-2);
   --color-flame: var(--tone-flame);
@@ -68,7 +74,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  color: var(--color-petrol);
+  color: var(--color-title);
 }
 
 .prose-article p {

@@ -38,7 +38,7 @@ export default function Post() {
       <JsonLd data={postJsonLd} />
       <article className="prose-article">
         <p className="font-mono text-xs text-petrol-2">29 Jul 2026</p>
-        <h1 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-petrol sm:text-4xl">
+        <h1 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-title sm:text-4xl">
           {post.title}
         </h1>
 

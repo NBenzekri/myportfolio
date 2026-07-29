@@ -13,7 +13,7 @@ export default function BlogIndex() {
       <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-flame-deep">
         Notes from the field
       </p>
-      <h1 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-petrol">
+      <h1 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-title">
         Blog<span className="text-flame">.</span>
       </h1>
       <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-muted">
