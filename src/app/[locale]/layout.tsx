@@ -3,6 +3,8 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Archivo, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import { routing } from "@/i18n/routing";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "../globals.css";
 
 const archivo = Archivo({
@@ -44,7 +46,11 @@ export default async function LocaleLayout({
       className={`${archivo.variable} ${sourceSans.variable} ${jbMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
