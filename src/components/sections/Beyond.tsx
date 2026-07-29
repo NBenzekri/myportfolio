@@ -23,7 +23,7 @@ const photos: { src: StaticImageData; label: Localized }[] = [
   },
   {
     src: bivouacHiking,
-    label: { en: "Bivouac hike", fr: "Rando bivouac" },
+    label: { en: "Hiking", fr: "Randonnée" },
   },
   { src: paris, label: { en: "Home base, Paris", fr: "Port d'attache, Paris" } },
 ];
