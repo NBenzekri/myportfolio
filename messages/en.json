@@ -6,8 +6,12 @@
     "contact": "Contact"
   },
   "hero": {
+    "kicker": "Senior Full Stack Engineer · since 2018 · Paris",
     "title": "Nouriddin Ben Zekri",
-    "subtitle": "Senior Full Stack Engineer"
+    "lead": "I build the systems companies depend on: gas distribution for energy suppliers, credit rating in banking, port logistics. Java and Spring on the back, React on the front, and my own products on the side.",
+    "current": "Currently at GRDF, via Néosoft",
+    "ctaWork": "See my work",
+    "ctaContact": "Get in touch"
   },
   "experience": {
     "heading": "Experience"
