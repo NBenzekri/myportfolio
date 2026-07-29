@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="border-b border-line">
       <div className="mx-auto flex max-w-3xl flex-col-reverse gap-8 px-5 py-16 sm:flex-row sm:items-center sm:justify-between sm:py-24">
         <div className="max-w-xl">
-          <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-flame">
+          <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-flame-deep">
             {t("kicker")}
           </p>
           <h1 className="mt-3 font-heading text-4xl font-extrabold tracking-tight text-petrol sm:text-5xl">

@@ -14,7 +14,7 @@ export default function Section({
   return (
     <section id={id} className={`scroll-mt-16 ${tinted ? "bg-mist" : ""}`}>
       <div className="mx-auto max-w-3xl px-5 py-16 sm:py-20">
-        <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-flame">
+        <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-flame-deep">
           {kicker}
         </p>
         <h2 className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-petrol">

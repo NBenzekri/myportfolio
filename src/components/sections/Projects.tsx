@@ -44,7 +44,7 @@ export default function Projects() {
                   </span>
                 </a>
               </h3>
-              <span className="font-mono text-[10px] font-medium tracking-widest whitespace-nowrap text-flame uppercase">
+              <span className="font-mono text-[10px] font-semibold tracking-widest whitespace-nowrap text-flame-deep uppercase">
                 {t(project.id === "pronofans" ? "live" : "building")}
               </span>
             </div>

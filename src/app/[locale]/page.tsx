@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import Beyond from "@/components/sections/Beyond";
+import BlogTeaser from "@/components/sections/BlogTeaser";
 
 export default function HomePage({
   params,
@@ -19,6 +20,7 @@ export default function HomePage({
       <Experience />
       <Projects />
       <Beyond />
+      <BlogTeaser />
     </main>
   );
 }

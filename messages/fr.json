@@ -8,7 +8,7 @@
   "hero": {
     "kicker": "Ingénieur Full Stack Senior · depuis 2018 · Paris",
     "title": "Nouriddin Ben Zekri",
-    "lead": "Je construis des systèmes dont les entreprises dépendent au quotidien : acheminement du gaz pour les fournisseurs d'énergie, notation crédit en banque, logistique portuaire. Java et Spring côté back, React côté front, et mes propres produits à côté.",
+    "lead": "Je construis des systèmes dont les entreprises dépendent chaque jour : acheminement du gaz pour les fournisseurs d'énergie, notation crédit en banque, logistique portuaire. Java et Spring côté back, React côté front. L'IA fait partie de ma façon de coder au quotidien, et elle est au cœur des produits que je construis à côté.",
     "current": "Actuellement chez GRDF, via Néosoft",
     "ctaWork": "Voir mon parcours",
     "ctaContact": "Me contacter"
@@ -30,7 +30,9 @@
     "text": "Quand je ne livre pas de code, vous me trouverez sur la route, des hauts plateaux d'Islande à l'Atlas marocain, appareil photo à la main. Voyager entretient ma curiosité, et la curiosité, c'est la moitié du métier."
   },
   "blog": {
-    "heading": "Derniers articles"
+    "kicker": "Notes de terrain",
+    "heading": "Derniers articles",
+    "all": "Tous les articles (en anglais)"
   },
   "contact": {
     "heading": "Contact"
