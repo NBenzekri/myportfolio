@@ -33,16 +33,18 @@ export async function sendContactMessage(
     return result.error === "bot" ? { status: "sent" } : { status: "error" };
   }
 
+  // Fail closed: without both the URL and the secret, show the email
+  // fallback instead of calling the webhook unauthenticated.
   const url = process.env.CONTACT_WEBHOOK_URL;
-  if (!url) return { status: "unavailable" };
   const secret = process.env.PORTFOLIO_CONTACT_SECRET;
+  if (!url || !secret) return { status: "unavailable" };
 
   try {
     const res = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        ...(secret ? { Authorization: `Bearer ${secret}` } : {}),
+        Authorization: `Bearer ${secret}`,
       },
       body: JSON.stringify({ ...result.data, source: "nbenzekri.com" }),
     });

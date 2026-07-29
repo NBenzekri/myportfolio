@@ -37,6 +37,14 @@ describe("validateContact", () => {
     });
   });
 
+  it("rejects oversized emails", () => {
+    const longEmail = "a".repeat(250) + "@example.com";
+    expect(validateContact({ ...base, email: longEmail })).toEqual({
+      ok: false,
+      error: "too_long",
+    });
+  });
+
   it("flags honeypot submissions as bot", () => {
     expect(validateContact({ ...base, website: "http://spam" })).toEqual({
       ok: false,

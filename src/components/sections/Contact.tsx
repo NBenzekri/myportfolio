@@ -43,7 +43,10 @@ export default function Contact() {
       </p>
 
       {state.status === "sent" ? (
-        <p className="mt-8 max-w-xl border-t-2 border-petrol bg-mist p-5 text-[15px] leading-relaxed text-ink">
+        <p
+          role="status"
+          className="mt-8 max-w-xl border-t-2 border-petrol bg-mist p-5 text-[15px] leading-relaxed text-ink"
+        >
           {t("sent")}
         </p>
       ) : (
@@ -104,23 +107,25 @@ export default function Contact() {
             >
               {pending ? t("sending") : t("send")}
             </button>
-            {state.status === "error" ? (
-              <p className="text-sm text-kicker">{t("error")}</p>
-            ) : null}
-            {state.status === "rate_limited" ? (
-              <p className="text-sm text-muted">{t("rateLimited")}</p>
-            ) : null}
-            {state.status === "unavailable" ? (
-              <p className="text-sm text-muted">
-                {t("unavailable")}{" "}
-                <a
-                  href={`mailto:${site.email}`}
-                  className="font-semibold text-petrol underline underline-offset-2"
-                >
-                  {site.email}
-                </a>
-              </p>
-            ) : null}
+            <div aria-live="polite" className="contents">
+              {state.status === "error" ? (
+                <p className="text-sm text-kicker">{t("error")}</p>
+              ) : null}
+              {state.status === "rate_limited" ? (
+                <p className="text-sm text-muted">{t("rateLimited")}</p>
+              ) : null}
+              {state.status === "unavailable" ? (
+                <p className="text-sm text-muted">
+                  {t("unavailable")}{" "}
+                  <a
+                    href={`mailto:${site.email}`}
+                    className="font-semibold text-petrol underline underline-offset-2"
+                  >
+                    {site.email}
+                  </a>
+                </p>
+              ) : null}
+            </div>
           </div>
         </form>
       )}

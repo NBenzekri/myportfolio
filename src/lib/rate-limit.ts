@@ -3,9 +3,12 @@
 // scripts, not a determined attacker. The Resend daily quota and the
 // webhook's own cap are the harder backstops.
 
+// Global cap sits well above realistic legit traffic so a handful of
+// hostile requests can't lock the form for real visitors; the webhook's
+// own 10/hour send cap is what actually protects the email quota.
 const IP_LIMIT = 3;
 const IP_WINDOW_MS = 10 * 60 * 1000;
-const GLOBAL_LIMIT = 15;
+const GLOBAL_LIMIT = 30;
 const GLOBAL_WINDOW_MS = 60 * 60 * 1000;
 const MAX_TRACKED_IPS = 1000;
 

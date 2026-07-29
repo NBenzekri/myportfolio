@@ -19,9 +19,9 @@ export function validateContact(input: ContactInput): ContactValidation {
   const message = input.message.trim();
 
   if (!name || !email || !message) return { ok: false, error: "missing_fields" };
-  if (!EMAIL_RE.test(email)) return { ok: false, error: "invalid_email" };
-  if (name.length > 200 || message.length > 5000)
+  if (name.length > 200 || email.length > 254 || message.length > 5000)
     return { ok: false, error: "too_long" };
+  if (!EMAIL_RE.test(email)) return { ok: false, error: "invalid_email" };
 
   return { ok: true, data: { name, email, message } };
 }
