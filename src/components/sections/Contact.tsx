@@ -8,6 +8,24 @@ import { site } from "@/data/site";
 
 const initialState: ContactState = { status: "idle" };
 
+function DocIcon() {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-4 w-4"
+    >
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+      <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+    </svg>
+  );
+}
+
 const fieldClasses =
   "w-full border border-line bg-paper px-3.5 py-2.5 text-[15px] text-ink placeholder:text-muted/60 focus:border-petrol focus:outline-none focus:ring-2 focus:ring-petrol/20";
 
@@ -110,14 +128,16 @@ export default function Contact() {
         </span>
         <a
           href="/cv/CV-Nouriddin-BEN-ZEKRI-EN.pdf"
-          className="border border-line px-4 py-2 font-heading text-sm font-bold text-petrol transition-colors hover:border-petrol"
+          className="inline-flex items-center gap-2 border border-line px-4 py-2 font-heading text-sm font-bold text-petrol transition-colors hover:border-petrol"
         >
+          <DocIcon />
           {t("cvEn")}
         </a>
         <a
           href="/cv/CV-Nouriddin-BEN-ZEKRI-FR.pdf"
-          className="border border-line px-4 py-2 font-heading text-sm font-bold text-petrol transition-colors hover:border-petrol"
+          className="inline-flex items-center gap-2 border border-line px-4 py-2 font-heading text-sm font-bold text-petrol transition-colors hover:border-petrol"
         >
+          <DocIcon />
           {t("cvFr")}
         </a>
       </div>

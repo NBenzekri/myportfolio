@@ -9,10 +9,10 @@ export type Post = {
 // and add its entry at the top of this list.
 export const posts: Post[] = [
   {
-    slug: "what-ai-gets-wrong-spring-transactions",
-    title: "What AI assistants get subtly wrong about Spring transactions",
-    date: "2026-07-29",
+    slug: "equals-hashcode-nightmare",
+    title: "The equals and hashCode nightmare",
+    date: "2026-07-30",
     description:
-      "Self-invocation, readOnly and rollback rules: three places where generated Spring code compiles, passes review, and still loses data in production.",
+      "The Java question that follows you from junior interviews to senior ones: what the contract really says, what HashMap does with your hashCode, and the two bugs that make it to production.",
   },
 ];

@@ -18,13 +18,16 @@ export default function Header() {
         </Link>
         <nav
           aria-label="Main"
-          className="flex items-center gap-4 font-mono text-[11px] whitespace-nowrap uppercase tracking-widest text-muted sm:gap-6 sm:text-xs"
+          className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 font-mono text-[11px] whitespace-nowrap uppercase tracking-widest text-muted sm:gap-x-6 sm:text-xs"
         >
           <Link
             href="/#experience"
             className="transition-colors hover:text-petrol"
           >
             {t("work")}
+          </Link>
+          <Link href="/#skills" className="transition-colors hover:text-petrol">
+            {t("skills")}
           </Link>
           <Link
             href="/#projects"

@@ -48,8 +48,8 @@ export default function Hero() {
           alt="Nouriddin Ben Zekri"
           placeholder="blur"
           priority
-          className="h-28 w-28 rounded-2xl border-2 border-petrol object-cover object-top sm:h-40 sm:w-40"
-          sizes="(min-width: 640px) 160px, 112px"
+          className="h-44 w-44 rounded-2xl border-2 border-petrol object-cover object-top sm:h-60 sm:w-60"
+          sizes="(min-width: 640px) 240px, 176px"
         />
       </div>
     </section>
