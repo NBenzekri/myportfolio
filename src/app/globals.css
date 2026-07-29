@@ -1,15 +1,41 @@
 @import "tailwindcss";
 
+:root {
+  color-scheme: light;
+  --tone-paper: #ffffff;
+  --tone-ink: #1b262b;
+  --tone-petrol: #135263;
+  --tone-petrol-2: #3e7a8a;
+  --tone-flame: #e8590c;
+  --tone-flame-deep: #c2410c;
+  --tone-line: #d9e3e6;
+  --tone-muted: #5a6b71;
+  --tone-mist: #f3f7f8;
+}
+
+.dark {
+  color-scheme: dark;
+  --tone-paper: #0e1518;
+  --tone-ink: #e4ecef;
+  --tone-petrol: #6db2c4;
+  --tone-petrol-2: #8ec4d2;
+  --tone-flame: #f2692e;
+  --tone-flame-deep: #f0824e;
+  --tone-line: #24333a;
+  --tone-muted: #93a8b0;
+  --tone-mist: #151f24;
+}
+
 @theme inline {
-  --color-ink: #1b262b;
-  --color-petrol: #135263;
-  --color-petrol-2: #3e7a8a;
-  --color-flame: #e8590c;
-  --color-flame-deep: #c2410c;
-  --color-line: #d9e3e6;
-  --color-muted: #5a6b71;
-  --color-mist: #f3f7f8;
-  --color-paper: #ffffff;
+  --color-ink: var(--tone-ink);
+  --color-petrol: var(--tone-petrol);
+  --color-petrol-2: var(--tone-petrol-2);
+  --color-flame: var(--tone-flame);
+  --color-flame-deep: var(--tone-flame-deep);
+  --color-line: var(--tone-line);
+  --color-muted: var(--tone-muted);
+  --color-mist: var(--tone-mist);
+  --color-paper: var(--tone-paper);
   --font-heading: var(--font-archivo), Arial, sans-serif;
   --font-body: var(--font-source), "Segoe UI", sans-serif;
   --font-mono: var(--font-jbmono), Consolas, monospace;
@@ -26,7 +52,7 @@ body {
 }
 
 ::selection {
-  background: #135263;
+  background: var(--tone-petrol);
   color: #ffffff;
 }
 
@@ -82,6 +108,7 @@ body {
   margin-top: 1.25rem;
   overflow-x: auto;
   border-radius: 0.5rem;
+  border: 1px solid var(--color-line);
   background: #10191d;
   padding: 1rem 1.25rem;
   font-size: 0.85rem;
@@ -94,4 +121,3 @@ body {
   padding: 0;
   font-size: inherit;
 }
-

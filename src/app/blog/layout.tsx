@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { fontClasses } from "@/app/fonts";
 import { site } from "@/data/site";
+import ThemeToggle from "@/components/ThemeToggle";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -29,8 +31,13 @@ export default function BlogLayout({
   const year = new Date().getFullYear();
 
   return (
-    <html lang="en" className={`${fontClasses} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${fontClasses} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="min-h-full flex flex-col">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
           <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-5 py-3">
             <a
@@ -52,6 +59,7 @@ export default function BlogLayout({
               >
                 Blog
               </a>
+              <ThemeToggle />
             </nav>
           </div>
         </header>
@@ -61,6 +69,7 @@ export default function BlogLayout({
             <p>© {year} Nouriddin Ben Zekri · All rights reserved.</p>
           </div>
         </footer>
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>

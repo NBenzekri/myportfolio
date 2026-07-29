@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -40,6 +41,7 @@ export default function Header() {
             {t("contact")}
           </Link>
           <LocaleSwitcher />
+          <ThemeToggle />
         </nav>
       </div>
     </header>

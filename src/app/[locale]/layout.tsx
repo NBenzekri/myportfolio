@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { ThemeProvider } from "next-themes";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -90,14 +91,20 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${fontClasses} h-full antialiased`}>
+    <html
+      lang={locale}
+      className={`${fontClasses} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="min-h-full flex flex-col">
         <JsonLd data={personJsonLd} />
-        <NextIntlClientProvider>
-          <Header />
-          <div className="flex-1">{children}</div>
-          <Footer />
-        </NextIntlClientProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NextIntlClientProvider>
+            <Header />
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </NextIntlClientProvider>
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>
