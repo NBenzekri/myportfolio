@@ -56,6 +56,7 @@
     "sending": "Sending...",
     "sent": "Thanks, your message is on its way. I usually reply within a day or two.",
     "error": "Something went wrong on the way. Try again, or email me directly.",
+    "rateLimited": "A lot of messages just came through. Wait a few minutes and try again, or email me directly.",
     "unavailable": "The form is not connected yet. Email me directly at",
     "cvLabel": "Resume",
     "cvEn": "CV, English",

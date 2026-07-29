@@ -56,6 +56,7 @@
     "sending": "Envoi en cours...",
     "sent": "Merci, votre message est bien parti. Je réponds en général sous un jour ou deux.",
     "error": "Quelque chose s'est mal passé. Réessayez, ou écrivez-moi directement.",
+    "rateLimited": "Beaucoup de messages viennent d'arriver. Patientez quelques minutes et réessayez, ou écrivez-moi directement.",
     "unavailable": "Le formulaire n'est pas encore connecté. Écrivez-moi directement à",
     "cvLabel": "CV",
     "cvEn": "CV en anglais",

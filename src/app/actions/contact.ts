@@ -1,15 +1,24 @@
 "use server";
 
+import { headers } from "next/headers";
 import { validateContact } from "@/lib/contact-validation";
+import { allowSubmission } from "@/lib/rate-limit";
 
 export type ContactState = {
-  status: "idle" | "sent" | "error" | "unavailable";
+  status: "idle" | "sent" | "error" | "unavailable" | "rate_limited";
 };
 
 export async function sendContactMessage(
   _prev: ContactState,
   formData: FormData,
 ): Promise<ContactState> {
+  const requestHeaders = await headers();
+  const ip =
+    requestHeaders.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    requestHeaders.get("x-real-ip") ||
+    "unknown";
+  if (!allowSubmission(ip)) return { status: "rate_limited" };
+
   const result = validateContact({
     name: String(formData.get("name") ?? ""),
     email: String(formData.get("email") ?? ""),

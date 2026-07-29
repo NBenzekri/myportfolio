@@ -107,6 +107,9 @@ export default function Contact() {
             {state.status === "error" ? (
               <p className="text-sm text-kicker">{t("error")}</p>
             ) : null}
+            {state.status === "rate_limited" ? (
+              <p className="text-sm text-muted">{t("rateLimited")}</p>
+            ) : null}
             {state.status === "unavailable" ? (
               <p className="text-sm text-muted">
                 {t("unavailable")}{" "}
