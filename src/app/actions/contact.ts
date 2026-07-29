@@ -26,11 +26,15 @@ export async function sendContactMessage(
 
   const url = process.env.CONTACT_WEBHOOK_URL;
   if (!url) return { status: "unavailable" };
+  const secret = process.env.PORTFOLIO_CONTACT_SECRET;
 
   try {
     const res = await fetch(url, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        ...(secret ? { Authorization: `Bearer ${secret}` } : {}),
+      },
       body: JSON.stringify({ ...result.data, source: "nbenzekri.com" }),
     });
     return res.ok ? { status: "sent" } : { status: "error" };
