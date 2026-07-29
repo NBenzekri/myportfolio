@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <section className="border-b border-line">
-      <div className="mx-auto flex max-w-3xl flex-col-reverse gap-8 px-5 py-16 sm:flex-row sm:items-center sm:justify-between sm:py-24">
+      <div className="mx-auto flex max-w-3xl flex-col-reverse items-center gap-8 px-5 py-16 text-center sm:flex-row sm:items-center sm:justify-between sm:py-24 sm:text-left">
         <div className="max-w-xl">
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-kicker">
             {t("kicker")}
@@ -19,14 +19,14 @@ export default function Hero() {
             <span className="text-flame">.</span>
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-ink">{t("lead")}</p>
-          <p className="mt-4 flex items-center gap-2 font-mono text-xs text-muted">
+          <p className="mt-4 flex items-center justify-center gap-2 font-mono text-xs text-muted sm:justify-start">
             <span
               aria-hidden
               className="inline-block h-2 w-2 rounded-full bg-flame"
             />
             {t("current")}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:justify-start">
             <Link
               href="/#experience"
               className="bg-petrol px-5 py-2.5 font-heading text-sm font-bold text-paper transition-colors hover:bg-petrol-2"

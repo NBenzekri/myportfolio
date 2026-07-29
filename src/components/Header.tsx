@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
-      <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-5 py-3">
+      <div className="mx-auto flex max-w-3xl flex-col items-center gap-y-2 px-5 py-3 sm:flex-row sm:justify-between sm:gap-x-6">
         <Link
           href="/"
           className="font-heading text-lg font-extrabold tracking-tight text-ink"
@@ -18,7 +18,7 @@ export default function Header() {
         </Link>
         <nav
           aria-label="Main"
-          className="flex items-center gap-4 font-mono text-[11px] uppercase tracking-widest text-muted sm:gap-6 sm:text-xs"
+          className="flex items-center gap-4 font-mono text-[11px] whitespace-nowrap uppercase tracking-widest text-muted sm:gap-6 sm:text-xs"
         >
           <Link
             href="/#experience"
