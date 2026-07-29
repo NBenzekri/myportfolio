@@ -14,13 +14,20 @@
     "ctaContact": "Me contacter"
   },
   "experience": {
+    "kicker": "Énergie · Banque · Ports",
     "heading": "Expérience"
   },
   "projects": {
-    "heading": "Ce que je construis"
+    "kicker": "De l'idée à la production",
+    "heading": "Ce que je construis",
+    "intro": "En dehors des missions, je conçois, développe et exploite mes propres produits, de bout en bout : le produit, le code, l'infrastructure et le marketing qui va avec.",
+    "live": "En ligne",
+    "building": "En développement"
   },
   "beyond": {
-    "heading": "Au-delà du code"
+    "kicker": "Islande · Maroc · et la suite",
+    "heading": "Au-delà du code",
+    "text": "Quand je ne livre pas de code, vous me trouverez sur la route, des hauts plateaux d'Islande à l'Atlas marocain, appareil photo à la main. Voyager entretient ma curiosité, et la curiosité, c'est la moitié du métier."
   },
   "blog": {
     "heading": "Derniers articles"

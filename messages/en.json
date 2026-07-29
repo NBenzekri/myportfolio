@@ -14,13 +14,20 @@
     "ctaContact": "Get in touch"
   },
   "experience": {
+    "kicker": "Energy · Banking · Ports",
     "heading": "Experience"
   },
   "projects": {
-    "heading": "Things I build"
+    "kicker": "From idea to production",
+    "heading": "Things I build",
+    "intro": "Outside client work I design, build and run my own products, end to end: product, code, infrastructure and the marketing that follows.",
+    "live": "Live",
+    "building": "In development"
   },
   "beyond": {
-    "heading": "Beyond code"
+    "kicker": "Iceland · Morocco · wherever next",
+    "heading": "Beyond code",
+    "text": "When I am not shipping code you will find me on the road, from the Icelandic highlands to the Moroccan Atlas, camera in hand. Travel keeps me curious, and curiosity is half the job."
   },
   "blog": {
     "heading": "Latest writing"

@@ -1,6 +1,9 @@
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import Hero from "@/components/sections/Hero";
+import Experience from "@/components/sections/Experience";
+import Projects from "@/components/sections/Projects";
+import Beyond from "@/components/sections/Beyond";
 
 export default function HomePage({
   params,
@@ -13,6 +16,9 @@ export default function HomePage({
   return (
     <main>
       <Hero />
+      <Experience />
+      <Projects />
+      <Beyond />
     </main>
   );
 }
