@@ -5,6 +5,7 @@ import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import Beyond from "@/components/sections/Beyond";
 import BlogTeaser from "@/components/sections/BlogTeaser";
+import Contact from "@/components/sections/Contact";
 
 export default function HomePage({
   params,
@@ -21,6 +22,7 @@ export default function HomePage({
       <Projects />
       <Beyond />
       <BlogTeaser />
+      <Contact />
     </main>
   );
 }

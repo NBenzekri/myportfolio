@@ -35,7 +35,20 @@
     "all": "All posts"
   },
   "contact": {
-    "heading": "Contact"
+    "kicker": "One email away",
+    "heading": "Contact",
+    "lead": "A mission, a product idea, or just to talk shop: my inbox is open.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "sent": "Thanks, your message is on its way. I usually reply within a day or two.",
+    "error": "Something went wrong on the way. Try again, or email me directly.",
+    "unavailable": "The form is not connected yet. Email me directly at",
+    "cvLabel": "Resume",
+    "cvEn": "CV, English",
+    "cvFr": "CV, French"
   },
   "footer": {
     "rights": "All rights reserved."

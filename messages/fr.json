@@ -35,7 +35,20 @@
     "all": "Tous les articles (en anglais)"
   },
   "contact": {
-    "heading": "Contact"
+    "kicker": "À un e-mail près",
+    "heading": "Contact",
+    "lead": "Une mission, une idée de produit, ou simplement envie de parler technique : ma boîte mail est ouverte.",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "sent": "Merci, votre message est bien parti. Je réponds en général sous un jour ou deux.",
+    "error": "Quelque chose s'est mal passé. Réessayez, ou écrivez-moi directement.",
+    "unavailable": "Le formulaire n'est pas encore connecté. Écrivez-moi directement à",
+    "cvLabel": "CV",
+    "cvEn": "CV en anglais",
+    "cvFr": "CV en français"
   },
   "footer": {
     "rights": "Tous droits réservés."
