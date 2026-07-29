@@ -19,7 +19,7 @@ export default function Contact() {
   );
 
   return (
-    <Section id="contact" kicker={t("kicker")} title={t("heading")}>
+    <Section id="contact" kicker={t("kicker")} title={t("heading")} tinted>
       <p className="max-w-xl text-[15px] leading-relaxed text-ink">
         {t("lead")}
       </p>

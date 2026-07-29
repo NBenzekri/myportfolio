@@ -20,6 +20,13 @@
     "kicker": "Énergie · Banque · Ports",
     "heading": "Expérience"
   },
+  "skills": {
+    "kicker": "La boîte à outils",
+    "heading": "Compétences",
+    "languages": "Langues",
+    "languagesValue": "Français bilingue · Anglais courant",
+    "education": "Formation & certifications"
+  },
   "projects": {
     "kicker": "De l'idée à la production",
     "heading": "Ce que je construis",

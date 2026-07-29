@@ -33,7 +33,7 @@ export default function Beyond() {
   const t = useTranslations("beyond");
 
   return (
-    <Section id="beyond" kicker={t("kicker")} title={t("heading")}>
+    <Section id="beyond" kicker={t("kicker")} title={t("heading")} tinted>
       <p className="max-w-xl text-[15px] leading-relaxed text-ink">
         {t("text")}
       </p>

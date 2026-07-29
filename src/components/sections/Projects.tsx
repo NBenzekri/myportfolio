@@ -12,7 +12,7 @@ export default function Projects() {
   const compact = projects.filter((p) => p.tier === "compact");
 
   return (
-    <Section id="projects" kicker={t("kicker")} title={t("heading")} tinted>
+    <Section id="projects" kicker={t("kicker")} title={t("heading")}>
       <p className="max-w-xl text-[15px] leading-relaxed text-muted">
         {t("intro")}
       </p>

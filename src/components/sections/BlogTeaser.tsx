@@ -15,7 +15,7 @@ export default function BlogTeaser() {
   const latest = posts.slice(0, 3);
 
   return (
-    <Section id="blog" kicker={t("kicker")} title={t("heading")} tinted>
+    <Section id="blog" kicker={t("kicker")} title={t("heading")}>
       <ul className="space-y-6">
         {latest.map((post) => (
           <li key={post.slug}>

@@ -20,6 +20,13 @@
     "kicker": "Energy · Banking · Ports",
     "heading": "Experience"
   },
+  "skills": {
+    "kicker": "The toolbox",
+    "heading": "Skills",
+    "languages": "Languages",
+    "languagesValue": "French, bilingual · English, fluent",
+    "education": "Education & certifications"
+  },
   "projects": {
     "kicker": "From idea to production",
     "heading": "Things I build",
