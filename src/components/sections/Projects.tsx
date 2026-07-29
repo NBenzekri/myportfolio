@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import Section from "@/components/Section";
 import { projects } from "@/data/projects";
 import { pick } from "@/data/types";
@@ -22,8 +23,15 @@ export default function Projects() {
             key={project.id}
             className="flex flex-col border-t-2 border-petrol bg-paper p-6 shadow-sm"
           >
-            <div className="flex items-baseline justify-between gap-4">
-              <h3 className="font-heading text-lg font-bold text-ink">
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="flex items-center gap-2.5 font-heading text-lg font-bold text-ink">
+                <Image
+                  src={project.logo}
+                  alt=""
+                  width={32}
+                  height={32}
+                  className="h-8 w-8 rounded-md object-contain"
+                />
                 <a
                   href={project.url}
                   target="_blank"
@@ -55,6 +63,13 @@ export default function Projects() {
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         {compact.map((project) => (
           <p key={project.id} className="text-[15px] leading-relaxed">
+            <Image
+              src={project.logo}
+              alt=""
+              width={20}
+              height={20}
+              className="mr-1.5 inline-block h-5 w-5 rounded-sm object-contain align-text-bottom"
+            />
             <a
               href={project.url}
               target="_blank"

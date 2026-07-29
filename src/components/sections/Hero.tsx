@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import SocialLinks from "@/components/SocialLinks";
 import portrait from "../../../public/images/portrait.jpg";
 
 export default function Hero() {
@@ -38,6 +39,8 @@ export default function Hero() {
             >
               {t("ctaContact")}
             </Link>
+            <span aria-hidden className="hidden h-6 w-px bg-line sm:block" />
+            <SocialLinks />
           </div>
         </div>
         <Image

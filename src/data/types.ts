@@ -24,6 +24,7 @@ export type Project = {
   name: string;
   url: string;
   tier: "featured" | "compact";
+  logo: string;
   description: Localized;
   stack?: string[];
 };
