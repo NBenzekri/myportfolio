@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "work": "Experience",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Nouriddin Ben Zekri",
+    "subtitle": "Senior Full Stack Engineer"
+  },
+  "experience": {
+    "heading": "Experience"
+  },
+  "projects": {
+    "heading": "Things I build"
+  },
+  "beyond": {
+    "heading": "Beyond code"
+  },
+  "blog": {
+    "heading": "Latest writing"
+  },
+  "contact": {
+    "heading": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

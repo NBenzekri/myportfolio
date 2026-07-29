@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "work": "Expérience",
+    "projects": "Projets",
+    "blog": "Blog (EN)",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Nouriddin Ben Zekri",
+    "subtitle": "Ingénieur Full Stack Senior"
+  },
+  "experience": {
+    "heading": "Expérience"
+  },
+  "projects": {
+    "heading": "Ce que je construis"
+  },
+  "beyond": {
+    "heading": "Au-delà du code"
+  },
+  "blog": {
+    "heading": "Derniers articles"
+  },
+  "contact": {
+    "heading": "Contact"
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  }
+}
