@@ -2,9 +2,47 @@ import type { Experience } from "./types";
 
 export const experiences: Experience[] = [
   {
-    id: "grdf",
-    dates: { en: "Jan 2025 - present", fr: "janv. 2025 - auj." },
+    id: "canal-plus",
+    dates: { en: "Sep 2026 - present", fr: "sept. 2026 - auj." },
     current: true,
+    role: {
+      en: "Full Stack Engineer, Java / React",
+      fr: "Ingénieur Full Stack, Java / React",
+    },
+    client: "Canal+",
+    via: "Néosoft",
+    location: { en: "Paris", fr: "Paris" },
+    context: {
+      en: "Logistics team: the business applications behind Canal+'s international supply chain for its equipment, from warehouse supply and stock to distribution, after-sales and inventory.",
+      fr: "Équipe Logistics : les applications métier de la chaîne logistique internationale des équipements Canal+, de l'approvisionnement des entrepôts et des stocks à la distribution, au SAV et aux inventaires.",
+    },
+    bullets: {
+      en: [
+        "Build and maintain features end to end, from Spring Boot microservices to React and TypeScript front ends.",
+        "Work across a microservices landscape that shares one design system and one set of coding conventions.",
+        "Maintain legacy Java applications alongside the modern services.",
+      ],
+      fr: [
+        "Développement de fonctionnalités de bout en bout, des microservices Spring Boot aux front-ends React et TypeScript.",
+        "Évolution dans un écosystème microservices aux règles communes : un design system partagé et des conventions de code unifiées.",
+        "Maintenance des applications Java legacy en parallèle des services modernes.",
+      ],
+    },
+    stack: [
+      "Java 21",
+      "Spring Boot",
+      "Spring Cloud",
+      "React",
+      "TypeScript",
+      "Maven",
+      "pnpm",
+      "Docker",
+      "Oracle",
+    ],
+  },
+  {
+    id: "grdf",
+    dates: { en: "Jan 2025 - Aug 2026", fr: "janv. 2025 - août 2026" },
     role: {
       en: "Software Engineer, Java / Spring Boot",
       fr: "Ingénieur Études et Développement, Java / Spring Boot",

@@ -12,13 +12,13 @@
   "hero": {
     "kicker": "Senior Full Stack Engineer · since 2018 · Paris",
     "title": "Nouriddin Ben Zekri",
-    "lead": "I build the systems companies depend on: gas distribution for energy suppliers, credit rating in banking, port logistics. Java and Spring on the back, React on the front. AI is part of how I code every day, and it powers the products I build on the side.",
-    "current": "Currently at GRDF, via Néosoft",
+    "lead": "I build the systems companies depend on: logistics at Canal+ and at Africa's leading container port, gas distribution for energy suppliers, credit rating in banking. Java and Spring on the back, React on the front. AI is part of how I code every day, and it powers the products I build on the side.",
+    "current": "Currently at Canal+, via Néosoft",
     "ctaWork": "See my work",
     "ctaContact": "Get in touch"
   },
   "experience": {
-    "kicker": "Energy · Banking · Ports",
+    "kicker": "Media · Energy · Banking · Ports",
     "heading": "Experience"
   },
   "skills": {

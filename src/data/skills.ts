@@ -8,7 +8,7 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     label: { en: "Backend", fr: "Backend" },
-    items: "Java 8 → 23 · Spring Boot 3 (Web, Data JPA, Batch, Security, Kafka) · Node.js",
+    items: "Java 8 → 23 · Spring Boot 3 (Web, Data JPA, Batch, Security, Kafka) · Spring Cloud · Node.js",
   },
   {
     label: { en: "Event-driven", fr: "Event-driven" },
