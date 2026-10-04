@@ -89,6 +89,11 @@ export default function Projects() {
             <p className="mt-2 text-sm leading-relaxed text-muted">
               {pick(project.description, locale)}
             </p>
+            {project.stack ? (
+              <p className="mt-3 font-mono text-xs leading-relaxed text-petrol">
+                {project.stack.join(" · ")}
+              </p>
+            ) : null}
           </article>
         ))}
       </div>
