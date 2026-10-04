@@ -39,9 +39,10 @@ export const projects: Project[] = [
     tier: "compact",
     logo: "/images/projects/truqar.png",
     description: {
-      en: "Car rental marketplace for Morocco, connecting verified agencies and renters.",
-      fr: "Marketplace marocaine de location de voitures, entre agences vérifiées et conducteurs.",
+      en: "Car rental marketplace for Morocco, connecting verified agencies and renters: a web platform and its mobile app.",
+      fr: "Marketplace marocaine de location de voitures, entre agences vérifiées et conducteurs : une plateforme web et son application mobile.",
     },
+    stack: ["Next.js", "React Native", "Expo", "Prisma", "Supabase"],
   },
   {
     id: "marocbooking",
